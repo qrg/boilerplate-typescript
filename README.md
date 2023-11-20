@@ -2,6 +2,6 @@
 
 - pnpm
 - TypeScript
-- Jest
+- Vitest
 - ESLint
 - Prettier

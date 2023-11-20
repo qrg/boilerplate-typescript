@@ -120,16 +120,8 @@ const ts = {
 
 const test = {
   files: ['**/*.test.ts', '**/*.test.tsx'],
-  env: {
-    'jest/globals': true,
-  },
-  plugins: [...ts.plugins, 'jest'],
-  extends: [...ts.extends, 'plugin:jest/recommended'],
-  settings: {
-    jest: {
-      version: require('jest/package.json').version,
-    },
-  },
+  plugins: [...ts.plugins, 'vitest'],
+  extends: [...ts.extends, 'plugin:vitest/recommended'],
 }
 
 module.exports = {
